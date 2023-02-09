@@ -1,0 +1,175 @@
+:root{
+    --cor-principal: #EA1C81;
+    --cor-top: #D8F1FB;
+    --cor-preta: black;
+    --cor-branca: white;
+    --cor-fundo: #FAFBFF;
+}
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    transition: all 1s;
+    /* (*)pega tudo */
+}
+
+
+#header{
+    /* (# é um id) */
+    /* (. é class) */
+    background-color: var(--cor-top);
+    display: flex;
+    justify-content: space-between;
+    /* between cola nas bordas */
+    /*justify deixar a logo do lado do cabeçalho separado do link  */
+    align-items: center;
+    /* center deixa o item centralizado */
+}
+
+
+#header nav a{
+    text-decoration: none;
+    color: var(--cor-preta);
+}
+
+
+#header nav a:hover{
+    background-color: var(--cor-principal);
+    color: var(--cor-branca);
+    border-radius: 20px;
+}
+
+
+.margenlateral{
+    margin: 0px 20px;
+}
+
+
+main #banner{
+    background-image: url(../img/Banner.png);
+    height: calc(100vh - 116px);
+    background-repeat: no-repeat;
+    /* serve para não repetir a imagem */
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.marginCimaBaixo{
+    margin: 20px 0px;
+}
+
+
+ main #banner h1{
+    color: var(--cor-principal);
+    font-size: 2em;
+ }
+
+
+main #banner button{
+    background-color: var(--cor-principal);
+    color: var(--cor-branca);
+    border: none;
+    border-radius: 20px;
+
+
+}
+
+main #banner button:hover{
+    cursor: pointer;
+    font-size: large;
+    padding: 20px;
+}
+
+#header,main #banner button, #header nav a:hover, #bemVindos div, main #beneficios #beneficios-nossosbeneficios, #beneficios #beneficios-nossosbeneficios #rodape, main #form #form-formulario form{
+    padding: 15px;
+}
+
+#bemVindos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+ 
+#bemVindos #bemVindo-boasVindas h3{
+    color: var(--cor-principal);
+    margin-bottom: 10px;
+}
+
+
+main #beneficios{
+    background-color: var(--cor-fundo);
+    color: var(--cor-principal);
+}
+
+
+main #beneficios #beneficios-nossosbeneficios{
+
+    color: var(--cor-principal);
+}
+
+main #beneficios h3{
+    font-size: 2em;
+    
+}
+
+main #beneficios p{
+    color: var(--cor-preta);
+    margin: 20px 0px;
+}
+
+
+main #beneficios #beneficios-servicos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+} 
+
+main #form #form-texto, main #beneficios #beneficios-servicos, main #beneficios #beneficios-nossosbeneficios, #beneficios #beneficios-servicos, #rodape{
+    text-align: center;
+}
+
+main #form #form-formulario form{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+
+}
+
+main #form #form-formulario form input{
+    display: block;
+    padding: 8px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    border-radius: 10px;
+    width: 350px;
+}
+
+main #form #form-formulario form button{
+    padding: 8px;
+    border: none;
+    background-color: var(--cor-principal);
+    color: var(--cor-branca);
+    border-radius: 10px;
+    width: 350px;
+    cursor: pointer;
+}
+
+main #form #form-formulario{
+    background-image: url(../img/dog.png);
+    background-repeat:  no-repeat;
+    background-size: contain;
+}
+ #rodape{
+    background-color: var(--cor-top);
+
+ }
+
+
